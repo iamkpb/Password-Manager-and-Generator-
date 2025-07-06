@@ -1,9 +1,9 @@
 import tkinter as T
 from functools import partial
 import random 
-import mysql.connector as ms
+import mysql.connector as mss
 
-mycon=ms.connect(host='localhost',database='password_app',user='root',password='root')
+mycon=mss.connect(host='localhost',database='password_app',user='root',password='root')
 mycursor=mycon.cursor()
 userlist=[]
 s="show tables"
